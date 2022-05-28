@@ -31,4 +31,11 @@ sr.reveal('#titre2', {
     duration: 1200,
     reset: false, 
 });
+sr.reveal('#texte1', {
+    origin: 'top',
+    distance:'50px',
+    scale:1,
+    duration: 2000,
+    reset: false, 
+});
 
