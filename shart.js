@@ -259,6 +259,39 @@ const dataanimauxpoints = {
                     configestimerdroit
                     );
                       //---------------------------------------------
+ const datacriteredroit = {
+                labels: [
+                   'Être vivant ',
+                   'Ressentir des émotions',
+                   "Un certains niveau d'intelligence",
+                   'Autre'
+                   
+                ],
+                datasets: [{
+                    data: [41,35,11,14],
+                    backgroundColor: [
+                       '#B8D8BA',
+            '#D9DBBC',
+            '#FCDDBC',
+            '#EF959D',
+            '#69585F'
+                   
+                    ],
+                    hoverOffset: 6
+                }]
+                };  
+            
+                const configcriteredroit = {
+                    type: 'doughnut',
+                    data: datacriteredroit,
+                };
+            
+            
+                var chartcriteredroit = new Chart(
+                    document.getElementById('criteredroit'),
+                    configcriteredroit
+                    );
+                      //---------------------------------------------
     /*
             const data = {
                 labels: [
