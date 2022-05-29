@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+    <title>Droit des IA fortes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        .navbar{
+            background-color: #8584fe;
+        }          
+        .box-shart {
+  margin-top: 50px;
+  padding : 40px;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  height : 0%
+} 
+.text-enquete{
+    font-size: 1.7rem;
+}
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="index.html"><i class="fas fa-balance-scale"></i> Le droit de l'IA</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <b>
+                <font color="white">
+                    <FONT size="4pt"> MENU</FONT>
+                </font>
+            </b>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">
+                        <font color="white">Accueil</font><span class="sr-only">(current)</span>
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown">
+                        <font color="whitesmoke">Ethiques</font>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                       
+                        <a class="dropdown-item" href="vertu.html">
+                            <font color="black"><b>Ethique des vertus
+                        </a></b></font>
+                        <a class="dropdown-item" href="droit.html">
+                            <font color="black"><b>Ethique des droits
+                        </a></b></font>
+                        <a class="dropdown-item" href="responsabilité.html">
+                            <font color="black"><b>Ethique des responsabilités
+                        </a></b></font>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown">
+                        <font color="whitesmoke">Enquêtes</font>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="sondage.html">
+                            <font color="black"><b>Sondage
+                        </a></b></font>
+                        <a class="dropdown-item" href="expert.html">
+                            <font color="black"><b>Avis d'un expert
+                        </a></b></font>
+
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="conclusion.html">
+                        <font color="whitesmoke">Conclusion</font>
+                    </a>
+                </li>
+                
+                <li class="nav-item active">
+                    <a class="nav-link" href="equipe.html">
+                        <font color="whitesmoke">Equipe</font>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://hosting.umons.ac.be/html/ethiqueia/2020-2021/">
+                        <font color="whitesmoke">Sujets(2021)</font>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class = "row fond text-justify" style="margin-top:6%">
+
+        <div class="col-4 mx-auto">
+            <h1 id="titre1" class = "text-center" style="font-size: 4rem;"> <strong> Sondage sur le droit des IA </strong> </h1>
+       </div>
+    </div>
+  
+    <div class="box-shart center-block d-block mx-auto" style="margin-top: 6%; background-color:#8484fe26; ">
+            <div class="row" >
+                <div class="col-md-9  mx-auto ">
+                    <h2 style="font-weight: 600; text-align: center;">
+                       Disposition démographique de notre échantillon
+                    </h2>
+                </div>  
+            </div>
+
+            <div class="row" style="margin-top: 3%;">
+                <div class="col-md-3">
+                    <canvas id="sexe" class="canvas"></canvas>
+                </div>
+                <div class="col-md-7" style="margin-top: 3%; margin-left: 4%;">
+                    <p class="flow-text text-enquete" >
+                       Nous avons une répartition hommes-femmes presque parfaite. Il semblerait que le sujet du questionnaire touche les deux sexes de manière égale.
+                    </p>
+                </div>
+            
+            </div>
+            <div class="row" style="margin-top: 3%;">
+                <div class="col-md-3">
+                    <canvas id="age" class="canvas"></canvas>
+                </div>
+                <div class="col-md-7" style="margin-top: 3%; margin-left: 4%;">
+                    <p class="flow-text text-enquete" >
+                     La majorité de notre population se trouve entre 36 et 65 ans. Cependant tout le monde n'a pas répondu à cette question.
+                    </p>
+                </div>
+            
+            </div>
+        </div>
+
+        <div class="box-shart center-block d-block mx-auto" style="margin-top: 6%; background-color:#8484fe26; ">
+            <div class="row" >
+                <div class="col-md-9  mx-auto ">
+                    <h2 style="font-weight: 600; text-align: center;">
+                       Avez vous déjà eu des animaux de compagnie ?
+                    </h2>
+                </div>  
+            </div>
+
+            <div class="row" style="margin-top: 3%;">
+                <div class="col-md-3">
+                    <canvas id="animaux" class="canvas"></canvas>
+                </div>
+                <div class="col-md-7" style="margin-top: 3%; margin-left: 4%;">
+                    <p class="flow-text text-enquete" >
+                      On observe qu'une immense majorité des gens ayant répondu on déjà eu un animal de compagnie. C'est probablement lié à l'âge moyen de l'échantillon, les jeûnes ont une probabilité plus faible d'avoir eu des animaux dans leur vie.
+                    </p>
+                </div>
+            
+            </div>
+            
+        </div>
+   
+        <div class="box-shart center-block d-block mx-auto" style="margin-top: 6%; background-color:#8484fe26; ">
+            <div class="row" >
+                <div class="col-md-9  mx-auto ">
+                    <h2 style="font-weight: 600; text-align: center;">
+                       Pensez vous que les animaux méritent des droits ?
+                    </h2>
+                </div>  
+            </div>
+
+            <div class="row" style="margin-top: 3%;">
+                <div class="col-md-3">
+                    <canvas id="droitanimaux" class="canvas"></canvas>
+                </div>
+                <div class="col-md-7" style="margin-top: 3%; margin-left: 4%;">
+                    <p class="flow-text text-enquete" >
+                    On observe que la répartitions est très proche de la précédente. On peut établir un lien entre avoir eu à un moment un animal de compagnie et considérer que les animaux méritent des droits. 
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+        
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <script src="animation.js"></script>
+    <script src="shart.js"></script>
+
+
+</body>
+
+</html>

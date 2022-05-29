@@ -39,3 +39,12 @@ sr.reveal('#texte1', {
     reset: false, 
 });
 
+sr.reveal('.canvas', {
+    origin: 'top',
+    distance:'50px',
+    scale:1,
+    duration: 1400,
+    reset: false, 
+});
+
+
