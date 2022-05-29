@@ -292,6 +292,67 @@ const dataanimauxpoints = {
                     configcriteredroit
                     );
                       //---------------------------------------------
+
+ const datamefier = {
+                labels: [
+                   'Oui',
+                   'Non'
+                   
+                ],
+                datasets: [{
+                    data: [66,35],
+                    backgroundColor: [
+                       '#B8D8BA',
+           
+            '#69585F'
+                   
+                    ],
+                    hoverOffset: 6
+                }]
+                };  
+            
+                const configmefier = {
+                    type: 'pie',
+                    data: datamefier,
+                };
+            
+            
+                var chartmefier = new Chart(
+                    document.getElementById('mefier'),
+                    configmefier
+                    );
+                      //---------------------------------------------
+const datareduire = {
+                labels: [
+                   'Oui',
+                   'Non'
+                   
+                ],
+                datasets: [{
+                    data: [81,20],
+                    backgroundColor: [
+                   
+            '#D9DBBC',
+            '#FCDDBC',
+         
+        
+                   
+                    ],
+                    hoverOffset: 6
+                }]
+                };  
+            
+                const configreduire = {
+                    type: 'pie',
+                    data: datareduire,
+                };
+            
+            
+                var chartreduire = new Chart(
+                    document.getElementById('reduire'),
+                    configreduire
+                    );
+                      //---------------------------------------------
     /*
             const data = {
                 labels: [
