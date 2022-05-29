@@ -118,6 +118,85 @@ const dataSexe = {
                     configDroitAnimaux
                     );
                       //---------------------------------------------
+
+ const labelsanimauxpoints = [1,2,3,4,5];
+const dataanimauxpoints = {
+  labels: labelsanimauxpoints,
+  datasets: [{
+    label: '',
+    data: [2, 5, 22, 36,29],
+    backgroundColor: [
+      'rgba(255, 99, 132, 0.2)',
+      'rgba(255, 159, 64, 0.2)',
+      'rgba(255, 205, 86, 0.2)',
+      'rgba(75, 192, 192, 0.2)',
+      'rgba(54, 162, 235, 0.2)'
+  
+    ],
+    borderColor: [
+      'rgb(255, 99, 132)',
+      'rgb(255, 159, 64)',
+      'rgb(255, 205, 86)',
+      'rgb(75, 192, 192)',
+      'rgb(54, 162, 235)'
+   
+    ],
+    borderWidth: 1
+  }]
+};
+            
+                const configanimauxpoints = {
+                    type: 'bar',
+                    data: dataanimauxpoints,
+                    options: {
+                      scales: {
+                        y: {
+                          beginAtZero: true
+                        }
+                      }
+                    },
+                  };
+            
+            
+                var chartanimauxpoints = new Chart(
+                    document.getElementById('animauxpoints'),
+                    configanimauxpoints
+                    );
+                      //---------------------------------------------
+
+ const dataanimauxraison = {
+                labels: [
+                   'Ils n ont pas de morales',
+                   'Pas la même intelligence que les Hommes',
+                   'Ils ne savent pas parler ',
+                   'Autres'
+                   
+                ],
+                datasets: [{
+                    data: [11,25,20,45],
+                    backgroundColor: [
+                       '#B8D8BA',
+            '#D9DBBC',
+            '#FCDDBC',
+            '#EF959D',
+            '#69585F'
+                   
+                    ],
+                    hoverOffset: 6
+                }]
+                };  
+            
+                const configanimauxraison = {
+                    type: 'pie',
+                    data: dataanimauxraison,
+                };
+            
+            
+                var chartanimauxraison = new Chart(
+                    document.getElementById('animauxraison'),
+                    configanimauxraison
+                    );
+                      //---------------------------------------------
     /*
             const data = {
                 labels: [
