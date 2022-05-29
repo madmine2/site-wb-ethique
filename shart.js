@@ -197,6 +197,68 @@ const dataanimauxpoints = {
                     configanimauxraison
                     );
                       //---------------------------------------------
+
+ const datasavoiria = {
+                labels: [
+                   'Oui',
+                   'Non'
+                   
+                ],
+                datasets: [{
+                    data: [48,53],
+                    backgroundColor: [
+                       '#B8D8BA',
+            '#D9DBBC',
+            '#FCDDBC',
+            '#EF959D',
+            '#69585F'
+                   
+                    ],
+                    hoverOffset: 6
+                }]
+                };  
+            
+                const configsavoiria = {
+                    type: 'pie',
+                    data: datasavoiria,
+                };
+            
+            
+                var chartsavoiria = new Chart(
+                    document.getElementById('savoiria'),
+                    configsavoiria
+                    );
+                      //---------------------------------------------
+        const dataestimerdroit = {
+                      labels: [
+                   'Oui',
+                   'Non'
+                   
+                ],
+                datasets: [{
+                    data: [13,88],
+                    backgroundColor: [
+                  
+            '#FCDDBC',
+            '#EF959D',
+            '#69585F'
+                   
+                    ],
+                    hoverOffset: 6
+                }]
+                };  
+            
+                const configestimerdroit = {
+                    type: 'pie',
+                    data: dataestimerdroit,
+                };
+            
+            
+                var chartestimerdroit = new Chart(
+                    document.getElementById('estimerdroit'),
+                    configestimerdroit
+                    );
+                      //---------------------------------------------
     /*
             const data = {
                 labels: [
